@@ -1,0 +1,219 @@
+/*
+Theme Name: Dejee Portfoloio
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Author: Reyjudel Eroy
+Author URI: https://wordpress.org/
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.00
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwenty
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+header{
+    background-color: #3188d4;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+header h1{
+    color: wheat;
+    border: 8px solid white;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 36px;
+}
+.banner{
+    position: relative;
+
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .welcome{
+    padding: 30px;
+    color: white;
+    background-color: #2977bb;
+    position: absolute;
+    left: 0px;
+    top: 30%; 
+}
+.banner h2{
+    font-size: 72px;
+}
+.banner h2 span{
+    font-size: 1.3em;
+}
+nav{
+    background-color: #2977bb;
+    padding: 20px;
+    position: sticky;
+    top: 100px;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
+nav li a{
+    text-decoration: none;
+    color:azure
+}
+nav li a.join{
+    color: wheat;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+article h2{
+    color: #3188d4;
+    font-size: 48px;
+}
+article p{
+    line-height: 2em;
+}
+.images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+.images li{
+    display: inline-block;
+    width: 30%;
+    margin: 10px 5%;
+}
+.images li img{
+    max-width: 100%;
+}
+section.join{
+    background: #3188d4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+}
+.join h2{
+    font-size: 36px;
+}
+form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid white;
+}
+footer{
+    background: #2977bb;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+    background-color: #3188d4;
+}
+
+.images li:hover{
+    position: relative;
+    top: -4px;
+}
+form input:focus{
+    border: 4px dashed #4b4b4b;
+    outline: none;
+}
+form input:valid{
+    border: 4px solid greenyellow;
+}
+article p::first-line{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+section.join p::first-letter{
+    font-size: 1.5em;
+}
+p::selection{
+    background-color: #29bb61;
+    color: white;
+}
+p::after{
+    content: '...';
+}
+
+@media screen and (max-width: 1400px){
+
+    .banner .welcome h2{
+     font-size: 60px;
+   
+    }
+    nav li{
+        font-size: 18px;
+    }
+
+}
+@media screen and (max-width: 960px){
+
+    .banner .welcome h2{
+         font-size: 40px;
+    
+    }
+
+}
+@media screen and (max-width: 760px){
+
+    .banner .welcome{
+        position: relative;
+        text-align: center;
+        padding: 10px;
+    }
+    .banner .welcome br{
+        display: none;
+    }
+    .banner .welcome h2{
+        font-size: 25px;
+   }
+   .banner .welcome span{
+    font-size: 1em;
+   }
+   .images li{
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+   }
+}
+@media screen and (max-width: 560px){
+    nav li{
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+    header{
+        position: relative;
+    }
+    nav{
+        top: 0;
+    }
+}
